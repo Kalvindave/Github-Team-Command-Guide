@@ -6,7 +6,7 @@
 - **Week:** Week 6 - GitHub Basics and Integration
 - **Group:** Group 2 | Semi;colon
 - **Section:** BSIT 3C AMG B
-- **Repository:** [Paste repository URL]
+- **Repository:** https://github.com/Kalvindave/Github-Team-Command-Guide
 
 ## Project Purpose
 
