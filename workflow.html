@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Workflow | GitHub Team Command Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Daily GitHub Team Workflow</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="setup.html">Git Setup</a>
+                <a href="workflow.html">Team Workflow</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>First-Time Download</h2>
+            <pre><code>git clone https://github.com/kalvindave/repository.git</code></pre>
+        </section>
+
+        <section>
+            <h2>Required Workflow for Every Task</h2>
+            <ol class="workflow-steps">
+                <li><strong>Open main.</strong><pre><code>git switch main</code></pre></li>
+                <li><strong>Get the latest changes.</strong><pre><code>git pull origin main</code></pre></li>
+                <li><strong>Create a feature branch.</strong><pre><code>git switch -c feature-name</code></pre></li>
+                <li><strong>Edit and test the assigned file in VS Code.</strong></li>
+                <li><strong>Check the branch and files.</strong><pre><code>git branch
+git status</code></pre></li>
+                <li><strong>Review line changes.</strong><pre><code>git diff</code></pre></li>
+                <li><strong>Stage the change.</strong><pre><code>git add .</code></pre></li>
+                <li><strong>Create a meaningful commit.</strong><pre><code>git commit -m "Add assigned page content"</code></pre></li>
+                <li><strong>Push the feature branch.</strong><pre><code>git push -u origin feature-name</code></pre></li>
+                <li><strong>Create a pull request on GitHub.</strong></li>
+                <li><strong>Ask another member to review before merging.</strong></li>
+                <li><strong>Update local main after the merge.</strong><pre><code>git switch main
+git pull origin main</code></pre></li>
+            </ol>
+        </section>
+
+        <section class="note">
+            <h2>Team Rule</h2>
+            <p>Pull first, create a branch, edit, review, stage, commit, push,
+               request review, merge, and pull the updated main branch.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>GitHub Team Command Guide - Team Workflow</p>
+    </footer>
+</body>
+</html>
